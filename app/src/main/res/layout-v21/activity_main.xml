@@ -52,8 +52,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="#fff1decb"
-            android:drawableStart="@mipmap/ic_highlight_black_24dp"
-            android:text="@string/flashlight" />
+            android:drawableStart="@mipmap/ic_cloud_black_24dp"
+            android:text="@string/weather" />
     </LinearLayout>
 
     <LinearLayout
