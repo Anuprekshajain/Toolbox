@@ -49,7 +49,7 @@
             android:layout_margin="15dp"
             android:layout_weight="1"
             android:background="@drawable/circle"
-            android:drawableStart="drawable/ic_text_format_black_24dp"
+            android:drawableStart="@drawable/ic_text_format_black_24dp"
             android:text="@string/text_to_speech" />
 
         <Button

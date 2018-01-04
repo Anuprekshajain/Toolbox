@@ -47,7 +47,7 @@
             android:layout_margin="15dp"
             android:layout_weight="1"
             android:background="@drawable/circle"
-            android:drawableStart="@drawable/ic_text_format_black_24dp"
+            android:drawableLeft="@drawable/ic_text_format_black_24dp"
             android:elevation="10dp"
             android:text="@string/text_to_speech" />
 
@@ -76,7 +76,7 @@
             android:layout_margin="15dp"
             android:layout_weight="1"
             android:background="@drawable/circle"
-            android:drawableLeft="@drawable/ic_crop_black_24dp"
+            android:drawableStart="@drawable/ic_crop_black_24dp"
             android:elevation="10dp"
             android:text="@string/image_cropper" />
 
