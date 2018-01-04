@@ -6,4 +6,4 @@ Toolbox is an android app that will help the user to:<br/>
 5.Crop an image and save the cropped image<br/>
 6.Read current Affairs<br/>
 It make use of:<br/>
-NewsApi , ZXing library(Image Processing).
+NewsApi , ZXing library(Image Processing)and Compass sensors.
