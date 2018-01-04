@@ -7,16 +7,16 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-Button b1,b2,b3,b4,b5,b6;
+Button b1,b2,b3,b4,b5,b6,b8;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button b1=findViewById(R.id.button6);
-        Button b2=findViewById(R.id.button);
-        Button b3=findViewById(R.id.button4);
-        Button b4=findViewById(R.id.button2);
-        Button b5=findViewById(R.id.button5);
+        b1=findViewById(R.id.button6);
+        b2=findViewById(R.id.button);
+        b3=findViewById(R.id.button4);
+       Button b4=findViewById(R.id.button7);
+        b5=findViewById(R.id.button5);
         Button b6=findViewById(R.id.button3);
         b3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
@@ -66,13 +66,23 @@ Button b1,b2,b3,b4,b5,b6;
                 startActivity(myIntent);
             }
         });
-        b4.setOnClickListener(new View.OnClickListener() {
+      /*  b4.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
 
                 // Start NewActivity.class
                 Intent myIntent;
                 myIntent = new Intent(MainActivity.this,
                         WeatherActivity.class);
+                startActivity(myIntent);
+            }
+        });*/
+        b4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View arg0) {
+
+                // Start NewActivity.class
+                Intent myIntent;
+                myIntent = new Intent(MainActivity.this,
+                        CompassActivity.class);
                 startActivity(myIntent);
             }
         });

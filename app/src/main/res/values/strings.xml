@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">All in one</string>
+    <string name="app_name">Toolbox</string>
     <string name="barcode_scanner">Barcode Scanner</string>
     <string name="speech_to_text">Speech to text</string>
     <string name="text_to_speech">Text to speech</string>
@@ -18,4 +18,5 @@
     <string name="save_image">Save Image</string>
     <string name="your_image_will_appear_here">Your Image will appear here</string>
     <string name="weather">Weather</string>
+    <string name="compass">compass</string>
 </resources>
