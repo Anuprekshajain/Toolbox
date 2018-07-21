@@ -77,8 +77,8 @@
             android:layout_margin="15dp"
             android:layout_weight="1"
             android:background="@drawable/circle"
-            android:drawableLeft="@drawable/ic_crop_black_24dp"
-            android:text="@string/image_cropper" />
+            android:drawableLeft="@drawable/ic_videocam"
+            android:text="Screen Recorder" />
 
         <Button
             android:id="@+id/button3"

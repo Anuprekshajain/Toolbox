@@ -32,7 +32,8 @@
         <activity android:name=".DetailsActivity" />
         <activity android:name=".TextActivity" />
         <activity android:name=".CropActivity" />
-        <activity android:name=".CompassActivity"/>
+        <activity android:name=".CompassActivity" />
+        <activity android:name=".ScreenRecorderActivity"></activity>
     </application>
 
 </manifest>
