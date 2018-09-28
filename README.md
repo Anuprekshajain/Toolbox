@@ -3,7 +3,7 @@ Toolbox is an android app that will help the user to:<br/>
 2.Convert speech to text<br/>
 3.Check Prounciation(Speech to text)<br/>
 4.Check direction(Compass)<br/>
-5.Crop an image and save the cropped image<br/>
+5.Screen Recorder<br/>
 6.Read current Affairs<br/>
 It make use of:<br/>
 NewsApi , ZXing library(Image Processing)and Compass sensors.
