@@ -1,29 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ScreenRecorderActivity">
-
+    tools:context=".ScreenRecorderActivity"
+    android:orientation="vertical">
+<ImageView
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    android:src="@drawable/ic_screen_recorder_24dp"
+    android:layout_gravity="center_horizontal"/>
     <Switch
         android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="131dp"
-        android:layout_marginTop="81dp"
-        android:text="Audio" />
+        android:layout_marginTop="50dp"
+        android:text="@string/record_with_audio"
+        android:layout_gravity="center_horizontal"/>
 
     <Button
         android:id="@+id/btn_action"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="206dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
         android:background="@drawable/btn_back"
-        android:text="Start Recording"
+        android:text="@string/start_recording"
+        android:textAllCaps="false"
         android:textSize="18sp" />
-</RelativeLayout>
+</LinearLayout>

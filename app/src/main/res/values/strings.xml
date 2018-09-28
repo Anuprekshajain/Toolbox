@@ -4,7 +4,6 @@
     <string name="speech_to_text">Speech to text</string>
     <string name="text_to_speech">Text to speech</string>
     <string name="flashlight">Flashlight</string>
-    <string name="image_cropper">Image cropper</string>
     <string name="current_affairs">Current affairs</string>
     <string name="scan_qr_code" />
     <string name="scan_1d_barcode">Scan 1d barcode</string>
@@ -19,4 +18,8 @@
     <string name="your_image_will_appear_here">Your Image will appear here</string>
     <string name="weather">Weather</string>
     <string name="compass">compass</string>
+    <string name="screen_recorder">Screen Recorder</string>
+    <string name="audio">Audio</string>
+    <string name="start_recording">Start Recording</string>
+    <string name="record_with_audio">Record with Audio</string>
 </resources>
