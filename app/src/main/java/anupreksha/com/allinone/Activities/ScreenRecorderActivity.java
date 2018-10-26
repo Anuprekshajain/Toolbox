@@ -1,4 +1,4 @@
-package anupreksha.com.allinone;
+package anupreksha.com.allinone.Activities;
 
 import android.Manifest;
 import android.annotation.TargetApi;
@@ -30,6 +30,9 @@ import android.widget.Switch;
 import android.widget.Toast;
 
 import java.io.IOException;
+
+import anupreksha.com.allinone.Function;
+import anupreksha.com.allinone.R;
 
 public class ScreenRecorderActivity extends AppCompatActivity {
     Switch audio;

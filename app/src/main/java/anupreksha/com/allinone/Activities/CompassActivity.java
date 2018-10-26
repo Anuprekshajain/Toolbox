@@ -1,4 +1,4 @@
-package anupreksha.com.allinone;
+package anupreksha.com.allinone.Activities;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -10,6 +10,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import anupreksha.com.allinone.R;
+
 public class CompassActivity extends AppCompatActivity implements SensorEventListener {
     ImageView compass_img;
     TextView txt_compass;

@@ -13,7 +13,9 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-class ListNewsAdapter extends BaseAdapter {
+import anupreksha.com.allinone.Activities.CurrentActivity;
+
+public class ListNewsAdapter extends BaseAdapter {
     private Activity activity;
     private ArrayList<HashMap<String, String>> data;
 

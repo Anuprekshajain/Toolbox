@@ -1,4 +1,4 @@
-package anupreksha.com.allinone;
+package anupreksha.com.allinone.Activities;
 
 import android.Manifest;
 import android.content.ActivityNotFoundException;
@@ -13,13 +13,14 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.io.File;
+
+import anupreksha.com.allinone.R;
 
 public class CropActivity extends AppCompatActivity {
     ImageView imageView;

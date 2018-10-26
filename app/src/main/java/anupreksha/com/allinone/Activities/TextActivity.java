@@ -1,4 +1,4 @@
-package anupreksha.com.allinone;
+package anupreksha.com.allinone.Activities;
 
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import java.util.Locale;
+
+import anupreksha.com.allinone.R;
 
 public class TextActivity extends AppCompatActivity {
     TextToSpeech t1;

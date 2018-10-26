@@ -1,4 +1,4 @@
-package anupreksha.com.allinone;
+package anupreksha.com.allinone.Activities;
 
 import android.Manifest;
 import android.content.Intent;
@@ -16,6 +16,9 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+
+import anupreksha.com.allinone.Function;
+import anupreksha.com.allinone.R;
 
 import static android.speech.SpeechRecognizer.*;
 import static android.speech.SpeechRecognizer.ERROR_CLIENT;

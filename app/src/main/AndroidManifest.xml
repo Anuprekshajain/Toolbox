@@ -19,21 +19,21 @@
         android:roundIcon="@mipmap/toolbox"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main2Activity" />
-        <activity android:name=".SpeechActivity" />
-        <activity android:name=".CurrentActivity" />
-        <activity android:name=".DetailsActivity" />
-        <activity android:name=".TextActivity" />
-        <activity android:name=".CropActivity" />
-        <activity android:name=".CompassActivity" />
-        <activity android:name=".ScreenRecorderActivity"></activity>
+        <activity android:name=".Activities.Main2Activity" />
+        <activity android:name=".Activities.SpeechActivity" />
+        <activity android:name=".Activities.CurrentActivity" />
+        <activity android:name=".Activities.DetailsActivity" />
+        <activity android:name=".Activities.TextActivity" />
+        <activity android:name=".Activities.CropActivity" />
+        <activity android:name=".Activities.CompassActivity" />
+        <activity android:name=".Activities.ScreenRecorderActivity"></activity>
     </application>
 
 </manifest>

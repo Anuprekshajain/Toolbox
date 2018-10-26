@@ -1,4 +1,4 @@
-package anupreksha.com.allinone;
+package anupreksha.com.allinone.Activities;
 
 import android.Manifest;
 import android.app.Activity;
@@ -21,6 +21,8 @@ import android.widget.Toast;
 
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
+
+import anupreksha.com.allinone.R;
 
 public class Main2Activity extends AppCompatActivity {
     TextView t1;

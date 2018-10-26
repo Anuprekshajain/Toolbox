@@ -1,4 +1,4 @@
-package anupreksha.com.allinone;
+package anupreksha.com.allinone.Activities;
 
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -17,6 +17,10 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import anupreksha.com.allinone.Function;
+import anupreksha.com.allinone.ListNewsAdapter;
+import anupreksha.com.allinone.R;
+
 public class CurrentActivity extends AppCompatActivity {
     String API_KEY="22b36707d589479f9caabe1be99124cc";
     String NEWS_SOURCE = "bbc-news";
@@ -24,12 +28,12 @@ public class CurrentActivity extends AppCompatActivity {
     ProgressBar loader;
 
     ArrayList<HashMap<String, String>> dataList = new ArrayList<HashMap<String, String>>();
-    static final String KEY_AUTHOR = "author";
-    static final String KEY_TITLE = "title";
-    static final String KEY_DESCRIPTION = "description";
-    static final String KEY_URL = "url";
-    static final String KEY_URLTOIMAGE = "urlToImage";
-    static final String KEY_PUBLISHEDAT = "publishedAt";
+    public static final String KEY_AUTHOR = "author";
+    public static final String KEY_TITLE = "title";
+    public static final String KEY_DESCRIPTION = "description";
+    public static final String KEY_URL = "url";
+    public static final String KEY_URLTOIMAGE = "urlToImage";
+    public static final String KEY_PUBLISHEDAT = "publishedAt";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
