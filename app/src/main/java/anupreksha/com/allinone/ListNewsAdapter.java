@@ -42,7 +42,6 @@ public class ListNewsAdapter extends BaseAdapter {
             holder.author = (TextView) convertView.findViewById(R.id.author);
             holder.title = (TextView) convertView.findViewById(R.id.title);
             holder.sdetails = (TextView) convertView.findViewById(R.id.sdetails);
-            holder.time = (TextView) convertView.findViewById(R.id.time);
             convertView.setTag(holder);
         } else {
             holder = (ListNewsViewHolder) convertView.getTag();
@@ -51,17 +50,25 @@ public class ListNewsAdapter extends BaseAdapter {
         holder.author.setId(position);
         holder.title.setId(position);
         holder.sdetails.setId(position);
-        holder.time.setId(position);
 
         HashMap<String, String> song = new HashMap<String, String>();
         song = data.get(position);
 
         try{
-            holder.author.setText(song.get(CurrentActivity.KEY_AUTHOR));
-            holder.title.setText(song.get(CurrentActivity.KEY_TITLE));
-            holder.time.setText(song.get(CurrentActivity.KEY_PUBLISHEDAT));
-            holder.sdetails.setText(song.get(CurrentActivity.KEY_DESCRIPTION));
+            if(song.get(CurrentActivity.KEY_AUTHOR)!="null") {
+                holder.author.setText(song.get(CurrentActivity.KEY_AUTHOR));
+            }
+            else{
+                holder.author.setText("");
+            }
 
+            holder.title.setText(song.get(CurrentActivity.KEY_TITLE));
+            if(song.get(CurrentActivity.KEY_DESCRIPTION)!="null") {
+                holder.sdetails.setText(song.get(CurrentActivity.KEY_DESCRIPTION));
+            }
+            else{
+                holder.sdetails.setText("");
+            }
             if(song.get(CurrentActivity.KEY_URLTOIMAGE).toString().length() < 5)
             {
                 holder.galleryImage.setVisibility(View.GONE);
@@ -78,5 +85,5 @@ public class ListNewsAdapter extends BaseAdapter {
 
 class ListNewsViewHolder {
     ImageView galleryImage;
-    TextView author, title, sdetails, time;
+    TextView author, title, sdetails;
 }

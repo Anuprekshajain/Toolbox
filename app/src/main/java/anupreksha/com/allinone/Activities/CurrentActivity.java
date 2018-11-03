@@ -23,7 +23,7 @@ import anupreksha.com.allinone.R;
 
 public class CurrentActivity extends AppCompatActivity {
     String API_KEY="22b36707d589479f9caabe1be99124cc";
-    String NEWS_SOURCE = "bbc-news";
+    String NEWS_SOURCE ;
     ListView listNews;
     ProgressBar loader;
 
@@ -41,6 +41,9 @@ public class CurrentActivity extends AppCompatActivity {
         listNews = findViewById(R.id.listNews);
         loader =  findViewById(R.id.loader);
         listNews.setEmptyView(loader);
+        Bundle bundle=getIntent().getExtras();
+        assert bundle != null;
+        NEWS_SOURCE=bundle.getString("Source");
 
 
 
@@ -76,18 +79,22 @@ public class CurrentActivity extends AppCompatActivity {
                 try {
                     JSONObject jsonResponse = new JSONObject(xml);
                     JSONArray jsonArray = jsonResponse.optJSONArray("articles");
-
-                    for (int i = 0; i < jsonArray.length(); i++) {
-                        JSONObject jsonObject = jsonArray.getJSONObject(i);
-                        HashMap<String, String> map = new HashMap<String, String>();
-                        map.put(KEY_AUTHOR, jsonObject.optString(KEY_AUTHOR));
-                        map.put(KEY_TITLE, jsonObject.optString(KEY_TITLE));
-                        map.put(KEY_DESCRIPTION, jsonObject.optString(KEY_DESCRIPTION));
-                        map.put(KEY_URL, jsonObject.optString(KEY_URL));
-                        map.put(KEY_URLTOIMAGE, jsonObject.optString(KEY_URLTOIMAGE));
-                        map.put(KEY_PUBLISHEDAT, jsonObject.optString(KEY_PUBLISHEDAT));
-                        dataList.add(map);
-                    }
+                      if(jsonArray!=null) {
+                          for (int i = 0; i < jsonArray.length(); i++) {
+                              JSONObject jsonObject = jsonArray.getJSONObject(i);
+                              HashMap<String, String> map = new HashMap<String, String>();
+                              map.put(KEY_AUTHOR, jsonObject.optString(KEY_AUTHOR));
+                              map.put(KEY_TITLE, jsonObject.optString(KEY_TITLE));
+                              map.put(KEY_DESCRIPTION, jsonObject.optString(KEY_DESCRIPTION));
+                              map.put(KEY_URL, jsonObject.optString(KEY_URL));
+                              map.put(KEY_URLTOIMAGE, jsonObject.optString(KEY_URLTOIMAGE));
+                              map.put(KEY_PUBLISHEDAT, jsonObject.optString(KEY_PUBLISHEDAT));
+                              dataList.add(map);
+                          }
+                      }
+                      else{
+                          Toast.makeText(getApplicationContext(),"Please select another Source",Toast.LENGTH_SHORT).show();
+                      }
                 } catch (JSONException e) {
                     Toast.makeText(getApplicationContext(), "Unexpected error", Toast.LENGTH_SHORT).show();
                 }

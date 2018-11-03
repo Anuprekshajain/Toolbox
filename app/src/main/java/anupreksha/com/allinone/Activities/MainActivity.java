@@ -44,7 +44,7 @@ Button b1,b2,b3,b4,b5,b6,b8;
                 // Start NewActivity.class
                 Intent myIntent;
                 myIntent = new Intent(MainActivity.this,
-                        CurrentActivity.class);
+                        SourceActivity.class);
                 startActivity(myIntent);
             }
         });
