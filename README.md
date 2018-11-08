@@ -5,5 +5,5 @@ Toolbox is an android app that will help the user to:<br/>
 4.Check direction(Compass)<br/>
 5.Screen Recorder<br/>
 6.Read current Affairs<br/>
-It make use of:<br/>
-NewsApi , ZXing library(Image Processing)and Compass sensors.
+
+Link to app, video demo, screenshots: <a href=https://drive.google.com/drive/folders/1j-Q-tdXPvdeDcy4xtV_nttdN2NnoIlD2?usp=sharing>App Link</a>
