@@ -6,4 +6,4 @@ Toolbox is an android app that will help the user to:<br/>
 5.Screen Recorder<br/>
 6.Read current Affairs<br/>
 
-Link to app, video demo, screenshots: <a href=https://drive.google.com/drive/folders/1j-Q-tdXPvdeDcy4xtV_nttdN2NnoIlD2?usp=sharing>App Link</a>
+Link to app, video demo, screenshots: <a href=https://drive.google.com/drive/folders/1j-Q-tdXPvdeDcy4xtV_nttdN2NnoIlD2?usp=sharing> App </a>
